@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white" >
+
+        <ImageButton
+            android:id="@+id/ib_record_train_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:background="#00ffffff"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/tv_record_train_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="训练时间"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/y_line" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#EFEFF4"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="开始时间"
+        android:textColor="#676767"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <com.ak.qmyd.view.PickerView
+                android:id="@+id/pv_record_train_hour_a"
+                android:layout_width="80dp"
+                android:layout_height="190dp" />
+
+            <com.ak.qmyd.view.PickerView
+                android:id="@+id/pv_record_train_minute_a"
+                android:layout_width="80dp"
+                android:layout_height="190dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/pv_record_train_hour_a" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#EFEFF4"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="结束时间"
+            android:textColor="#676767"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <com.ak.qmyd.view.PickerView
+                android:id="@+id/pv_record_train_hour_b"
+                android:layout_width="80dp"
+                android:layout_height="190dp" />
+
+            <com.ak.qmyd.view.PickerView
+                android:id="@+id/pv_record_train_minute_b"
+                android:layout_width="80dp"
+                android:layout_height="190dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/pv_record_train_hour_b" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/bt_record_train_complete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#EFEFF4"
+            android:padding="10dp"
+            android:text="完成"
+            android:textColor="#4E4E4E"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

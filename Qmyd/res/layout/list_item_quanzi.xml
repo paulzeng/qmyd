@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/bg_item_dongtai"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <com.etsy.android.grid.util.DynamicHeightImageView
+        android:id="@+id/iv_qz_content_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/guide03" />
+
+    <TextView
+        android:id="@+id/tv_qz_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新场馆还不错，大家来试试"
+        android:textColor="@color/common_black_light"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/g_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_qz_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:padding="10dp"
+        android:orientation="horizontal" >
+
+        <com.ak.qmyd.view.CircleImageView
+            android:id="@+id/iv_qz_user_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp" 
+            android:src="@drawable/qz_user_logo" />
+
+        <TextView
+            android:id="@+id/tv_qz_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="夏天的风"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="@color/common_black_light"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp" />
+     
+    </LinearLayout>
+
+</LinearLayout>

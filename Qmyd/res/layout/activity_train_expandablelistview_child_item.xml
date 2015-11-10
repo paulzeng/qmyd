@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:padding="15dp" >
+
+        <ImageView
+            android:id="@+id/iv_trainlistview_item_img"
+            android:layout_width="120dp"
+            android:layout_height="85dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_trainlistview_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_trainlistview_item_next"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iv_trainlistview_item_img"
+            android:text="侧边单手平衡"
+            android:textColor="#333333"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_trainlistview_item_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/br_next_icon" />
+
+        <ImageView
+            android:id="@+id/iv_trainlistview_item_nazhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/iv_trainlistview_item_img"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/iv_trainlistview_item_img"
+            android:src="@drawable/time" />
+
+        <TextView
+            android:id="@+id/tv_trainlistview_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_trainlistview_item_nazhong"
+            android:layout_toRightOf="@+id/iv_trainlistview_item_nazhong"
+            android:text="15min"
+            android:textColor="#999999"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_trainlistview_item_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_trainlistview_item_time"
+            android:layout_alignBottom="@+id/tv_trainlistview_item_time"
+            android:layout_toRightOf="@+id/tv_trainlistview_item_score_img"
+            android:text="200分"
+            android:textColor="#9F9F9F"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/tv_trainlistview_item_score_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_trainlistview_item_score"
+            android:layout_toRightOf="@+id/tv_trainlistview_item_title"
+            android:src="@drawable/integral"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

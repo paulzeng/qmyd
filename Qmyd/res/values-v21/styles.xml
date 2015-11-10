@@ -1,0 +1,25 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme for API 21+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v21/styles.xml on API 21+ devices.
+    -->
+    <style name="AppBaseTheme">
+
+        <!-- API 21 theme customizations can go here. -->
+<!--         <item name="windowActionBar">false</item> -->
+<!--                                   <item name="android:windowNoTitle">true</item> -->
+<!--         Actionbar color -->
+<!--         <item name="colorPrimary">@color/accent_material_dark</item> -->
+<!--         Status bar color -->
+<!--         <item name="colorPrimaryDark">@color/accent_material_light</item> -->
+        <!-- Window color -->
+        <item name="android:windowBackground">@color/white</item>
+        <!-- edit by thomas start -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- end -->
+        <item name="android:textColor">#333333</item>
+    </style>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_common_warn_dialog"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/download_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp" 
+        android:gravity="center_horizontal" />
+
+    <com.ak.qmyd.view.NumberProgressBar
+        android:id="@+id/numberbar"
+        style="@style/NumberProgressBar_Funny_Orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp" >
+    </com.ak.qmyd.view.NumberProgressBar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/warn_bt_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+ 
+        <Button
+            android:id="@+id/download_cancle_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="@null"
+            android:padding="10dp"
+            android:text="取消"
+            android:textColor="@color/orange_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

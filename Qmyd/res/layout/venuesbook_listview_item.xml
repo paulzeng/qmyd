@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/venues_time" />
+
+        <TextView
+            android:id="@+id/textView_book_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:textSize="18sp"
+            android:textColor="@color/common_black_dark"
+             />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_book_time"
+            android:layout_below="@+id/textView_book_time"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/orange_color"
+            android:layout_marginRight="5dp"
+            android:textSize="20sp"
+            android:text="¥" />
+
+        <TextView
+            android:id="@+id/textView_book_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_marginRight="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/orange_color"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_book_money"
+            android:layout_alignBottom="@+id/textView_book_money"
+            android:layout_toRightOf="@+id/textView_book_money"
+            android:textSize="16sp"
+            android:text="剩余:" />
+
+        <TextView
+            android:id="@+id/textView_book_show"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"       
+            android:layout_toLeftOf="@+id/imageView_book_add"
+            android:padding="5dp"
+            android:gravity="center"
+            android:background="@drawable/textview_border2"
+            android:layout_margin="5dp"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/imageView_book_add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"          
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/add_y" />
+
+        <TextView
+            android:id="@+id/textView_book_remaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_toRightOf="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:textSize="16sp"
+           />
+
+        <ImageView
+            android:id="@+id/imageView_book_reduce"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/imageView_book_add"
+            android:layout_toLeftOf="@+id/textView_book_show"
+            android:src="@drawable/reduce_g" />
+
+    </RelativeLayout>
+    
+</LinearLayout>

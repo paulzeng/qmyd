@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <include layout="@layout/list_item_header_quanzi" />
+
+    <com.ak.qmyd.view.PullToRefreshStaggeredGridView
+        android:id="@+id/qz_pull_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F0F0"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:column_count="2"
+        app:item_margin="8dp" />
+
+</LinearLayout>

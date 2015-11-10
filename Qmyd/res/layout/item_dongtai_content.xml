@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <com.ak.qmyd.view.CircleImageView
+            android:id="@+id/dongtai_user_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/qz_user_logo" />
+
+        <TextView
+            android:id="@+id/tv_dongtai_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/dongtai_user_img"
+            android:text="我是小龙猫"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:maxEms="6"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_dongtai_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="15-04-14"
+            android:textColor="#999999"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_dongtai_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:text="什么时候啊?我也要去观察" 
+        android:textColor="#999999"
+        android:textSize="16sp"
+        android:padding="5dp" />
+
+</LinearLayout>

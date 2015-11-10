@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl_train_alert_drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/white" >
+
+            <ImageButton
+                android:id="@+id/ib_movement_alert_return"
+                android:layout_width="@dimen/title_width"
+                android:layout_height="@dimen/title_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="#00ffffff"
+                android:src="@drawable/arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="运动提醒"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_movement_alert_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="保存"
+                android:textColor="#FF8F06"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FF8F06" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#EFEFF4"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/bt_movement_alert_btn1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_selector"
+                    android:text="13"
+                    android:textColor="@color/text_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/bt_movement_alert_btn2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_selector"
+                    android:text="14"
+                    android:textColor="@color/text_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/bt_movement_alert_btn3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_selector"
+                    android:text="15"
+                    android:textColor="@color/text_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/bt_movement_alert_btn4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_selector"
+                    android:text="16"
+                    android:textColor="@color/text_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/bt_movement_alert_btn5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_selector"
+                    android:text="17"
+                    android:textColor="@color/text_selector" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#EFEFF4"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_movement_alert_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2015年3月13日"
+                android:textColor="#666666"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_movement_alert_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="星期五"
+                android:textColor="#666666"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="82dp"
+                android:background="#DFDFDF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="118dp"
+                android:background="#DFDFDF" />
+
+            <com.ak.qmyd.view.PickerView
+                android:id="@+id/pv_movement_alert_hour"
+                android:layout_width="80dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="90dp"
+                android:gravity="center" />
+
+            <com.ak.qmyd.view.PickerView
+                android:id="@+id/pv_movement_alert_minute"
+                android:layout_width="80dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/pv_movement_alert_hour"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="#EFEFF4" >
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DBDBDB" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_movement_alert_type"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_alert_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="重复时间"
+                    android:textColor="#606060"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/iv_alert_time_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/br_next_icon" />
+
+                <TextView
+                    android:id="@+id/tv_movement_alert_timetype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_alert_time"
+                    android:layout_alignBottom="@+id/tv_alert_time"
+                    android:layout_toLeftOf="@+id/iv_alert_time_img"
+                    android:text="不重复"
+                    android:textColor="#606060"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <!-- <TextView -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="1dp" -->
+            <!-- android:background="#DBDBDB" /> -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/rl_movement_alert_count" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:padding="8dp" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tv_alert_count" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentLeft="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:text="提醒次数" -->
+            <!-- android:textColor="#606060" -->
+            <!-- android:textSize="18sp" /> -->
+
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/iv_alert_count_img" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:layout_marginLeft="5dp" -->
+            <!-- android:src="@drawable/br_next_icon" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tv_movement_alert_count" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignBaseline="@+id/tv_alert_count" -->
+            <!-- android:layout_alignBottom="@+id/tv_alert_count" -->
+            <!-- android:layout_toLeftOf="@+id/iv_alert_count_img" -->
+            <!-- android:text="一次" -->
+            <!-- android:textColor="#606060" -->
+            <!-- android:textSize="18sp" /> -->
+            <!-- </RelativeLayout> -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:background="#DBDBDB" />
+
+            <RelativeLayout
+                android:id="@+id/rl_movement_alert_way"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_alert_way"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="提醒方式"
+                    android:textColor="#606060"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/iv_alert_way_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/br_next_icon" />
+
+                <TextView
+                    android:id="@+id/tv_movement_alert_way"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_alert_way"
+                    android:layout_alignBottom="@+id/tv_alert_way"
+                    android:layout_toLeftOf="@+id/iv_alert_way_img"
+                    android:text="铃声"
+                    android:textColor="#606060"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#DBDBDB" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

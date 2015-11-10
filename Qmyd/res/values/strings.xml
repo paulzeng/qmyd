@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">全民体育</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="cancel">已取消</string>
+    <string name="add_focus">+关注</string>
+    <string name="cancle_focus">取消关注</string>
+
+    <!-- 上次头像 -->
+    <string name="toast_no_sd">请检查你的"战斗"机是否有sd卡</string>
+    <string name="choose_phone">选择图片</string>
+    <string name="toast_no_album">我寻寻觅觅，没有找到系统相册</string>
+    <string name="toast_photo_empty">取消选择照片</string>
+    <string name="toast_un_image">不要坑我吧，你选择的不是图片</string>
+
+    <!-- select photo -->
+    <string name="more_than_max">超过了上限</string>
+    <string name="preview">预览</string>
+    <string name="recent_photos">最近照片</string>
+    <string name="sure">确定</string>
+    <string name="select_photos">选择照片</string>
+    <string name="back">返回</string>
+    <string name="taking_pictures">拍摄照片</string>
+    <string name="max_img_limit_reached">不能选择超过%d个图像</string>
+
+    <item name="tag_one" type="id"></item>
+    <item name="tag_two" type="id"></item>
+    <item name="tag_three" type="id"></item>
+    <item name="tag_four" type="id"></item>
+    <item name="tag_five" type="id"></item>
+    <item name="tag_six" type="id"></item>
+
+</resources>

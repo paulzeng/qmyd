@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl_user_info_drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <!-- 头部title -->
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/white" >
+
+            <ImageButton
+                android:id="@+id/in_user_info_return"
+                android:layout_width="@dimen/title_width"
+                android:layout_height="@dimen/title_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="#00ffffff"
+                android:src="@drawable/arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="个人主页"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/top_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/top"
+            android:background="@drawable/y_line" />
+
+        <ListView
+            android:id="@+id/lv_user_info_Dynamic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_line"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:divider="#F0F0F0"
+            android:dividerHeight="0.5dp"
+            android:listSelector="#00000000"
+            android:scrollbars="none" >
+        </ListView>
+ 
+
+        <LinearLayout
+            android:id="@+id/ll_edt_content"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="#F6F6F6"
+            android:padding="10dp"
+            android:visibility="gone" >
+
+            <com.ak.qmyd.view.ContainsEmojiEditText
+                android:id="@+id/et_content_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/editext_jianjie_border"
+                android:drawableLeft="@drawable/edit_big"
+                android:drawablePadding="10dp"
+                android:gravity="top"
+                android:hint="说点什么"
+                android:imeOptions="actionSend"
+                android:inputType="text"
+                android:padding="10dp"
+                android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

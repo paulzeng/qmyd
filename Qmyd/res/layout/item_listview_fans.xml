@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <com.ak.qmyd.view.CircleImageView
+            android:id="@+id/imgViewFansHead"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:src="@drawable/user" />
+
+        <LinearLayout
+            android:id="@+id/rlcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/imgViewFansHead" >
+
+            <TextView
+                android:id="@+id/txtViewFansNickName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="名字越长越好"
+                android:textColor="@color/common_black_dark"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <com.ak.qmyd.view.MyGridView
+                    android:id="@+id/gridview_sport"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:columnWidth="20dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="4dp"
+                    android:listSelector="#00000000"
+                    android:numColumns="5"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="4dp" />
+
+                <ImageView
+                    android:id="@+id/iv_sport_more"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/gridview_sport"
+                    android:src="@drawable/more"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtViewStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:background="@drawable/textview_border3"
+            android:padding="5dp"
+            android:text="@string/add_focus"
+            android:textColor="@color/orange_color"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

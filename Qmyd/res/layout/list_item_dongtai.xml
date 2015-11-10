@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/bg_item_dongtai"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <com.etsy.android.grid.util.DynamicHeightImageView
+        android:id="@+id/iv_content_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/guide03" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxEms="18"
+        android:padding="10dp"
+        android:maxLines="3"
+        android:text="新场馆还不错，大家来试试"
+        android:textColor="@color/common_black_light"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/g_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <com.ak.qmyd.view.CircleImageView
+            android:id="@+id/iv_user_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/qz_user_logo" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="夏天的风"
+            android:ellipsize="end"
+            android:maxEms="6"
+            android:singleLine="true"
+            android:textColor="@color/common_black_light"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.ak.qmyd"
+    android:id="@+id/grid_head"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_viewpager_height"
+        android:minHeight="@dimen/home_viewpager_height" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/find_banner_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"  >
+
+            <com.ak.qmyd.view.CirclePageIndicator
+                android:id="@+id/find_banner_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="10dip" 
+                android:paddingBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F0F0"
+        android:padding="10dp"
+        android:text="推荐用户"
+        android:textColor="@color/common_black_dark"
+        android:textSize="18sp" />
+
+</LinearLayout>

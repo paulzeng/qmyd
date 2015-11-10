@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl_sysnc_train_drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/ll_sync_train"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/white" >
+
+            <ImageButton
+                android:id="@+id/ib_sync_return"
+                android:layout_width="@dimen/title_width"
+                android:layout_height="@dimen/title_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="#00ffffff"
+                android:src="@drawable/arrow_back" />
+
+            <TextView
+                android:id="@+id/tv_sync_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_sync_videoview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <com.ak.qmyd.view.MyVideoView
+                android:id="@+id/vv_sync_video"
+                android:layout_width="fill_parent"
+                android:layout_height="270dp" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_sync_videoview_img"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/ll_sync_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_sync_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp" 
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_sync1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_sync1"
+                    android:layout_alignLeft="@+id/tv_sync_time"
+                    android:layout_alignTop="@+id/tv_sync1"
+                    android:src="@drawable/time" />
+
+                <TextView
+                    android:id="@+id/tv_sync1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_sync_time"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/iv_sync1"
+                    android:text="时长" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_sync_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp" 
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_sync2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_sync_count"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/iv_sync2"
+                    android:text="动作" />
+
+                <ImageView
+                    android:id="@+id/iv_sync2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignTop="@+id/tv_sync2"
+                    android:layout_toLeftOf="@+id/tv_sync_count"
+                    android:src="@drawable/dongzuo" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_sync_heat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_sync3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_sync_heat"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/iv_sync3"
+                    android:text="热量" />
+
+                <ImageView
+                    android:id="@+id/iv_sync3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@+id/tv_sync3"
+                    android:layout_alignLeft="@+id/tv_sync_heat"
+                    android:src="@drawable/reliang" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/g_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_sync_images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_sync_train_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/a_clock" />
+
+            <ImageView
+                android:id="@+id/iv_sync_train_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/list" />
+
+            <ImageView
+                android:id="@+id/iv_sync_train_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/history" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_start_train"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_sync_current_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#333333"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|left"
+                    android:text="训练进度" />
+
+                <TextView
+                    android:id="@+id/tv_sync_total_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|right" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/pb_sync_progrebar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+        </LinearLayout>
+
+        <!-- <Button -->
+        <!-- android:id="@+id/bt_sync_start" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="fill_parent" -->
+        <!-- android:background="#E7E7E7" -->
+        <!-- android:gravity="center" -->
+        <!-- android:text="开始训练" /> -->
+
+        <RelativeLayout
+            android:id="@+id/rl_sync_progressbar_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ProgressBar
+                android:id="@+id/pb_sync_down_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/aa_button_gray_normal"
+                android:progressDrawable="@drawable/progress_selector" />
+
+            <Button
+                android:id="@+id/bt_sync_start"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_selector"
+                android:text="下载"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        <!-- <RelativeLayout -->
+        <!-- android:id="@+id/rl_sync_progressbar_btn1" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="fill_parent" -->
+        <!-- android:visibility="gone" -->
+        <!-- android:gravity="bottom" > -->
+        <!-- <Button -->
+        <!-- android:id="@+id/bt_sync_start_bt" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="fill_parent" -->
+        <!-- android:text="开始训练" /> -->
+        <!-- </RelativeLayout> -->
+
+        <RelativeLayout
+            android:id="@+id/ll_start_train_btns"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/bt_sync_stop"
+                        android:layout_width="fill_parent"
+                        android:layout_height="80dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="#E7E7E7"
+                        android:text="暂停"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/bt_sync_end"
+                        android:layout_width="fill_parent"
+                        android:layout_height="80dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="#E7E7E7"
+                        android:text="结束训练"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+       <!--  <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/ll_end_train_btns"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/bt_end_train"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#E7E7E7"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="结束训练" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/bt_cancel_train"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#E7E7E7"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="取消" />
+            </LinearLayout>
+            </RelativeLayout> -->
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

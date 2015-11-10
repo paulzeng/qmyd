@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <ImageView
+            android:id="@+id/iv_train_history_item_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:id="@+id/tv_train_history_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_train_history_item_img"
+            android:layout_marginLeft="21dp"
+            android:layout_toRightOf="@+id/iv_train_history_item_img"
+            android:text="侧边单手平衡"
+            android:textColor="#333333" />
+
+        <ImageView
+            android:id="@+id/iv_train_history_item_nazhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_train_history_item_img"
+            android:layout_alignLeft="@+id/tv_train_history_item_title"
+            android:src="@drawable/time" />
+
+        <ImageView
+            android:id="@+id/iv_train_history_item_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right"
+            android:src="@drawable/br_next_icon" />
+
+        <TextView
+            android:id="@+id/tv_train_history_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_train_history_item_nazhong"
+            android:layout_toRightOf="@+id/iv_train_history_item_nazhong"
+            android:text="15min"
+            android:textColor="#999999" />
+
+        <TextView
+            android:id="@+id/tv_train_history_item_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_train_history_item_time"
+            android:layout_alignBottom="@+id/tv_train_history_item_time"
+            android:layout_toRightOf="@+id/tv_train_history_item_score_img"
+            android:text="200分"
+            android:textColor="#9F9F9F" />
+
+        <ImageView
+            android:id="@+id/tv_train_history_item_score_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_train_history_item_score"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_train_history_item_time"
+            android:src="@drawable/integral" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="13dp"
+        android:background="#F0F0F0" />
+
+</LinearLayout>

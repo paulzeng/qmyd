@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_buy_ticket"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:text="我要买票" />
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/button1"
+        
+         android:layout_margin="20dp"
+         android:background="@drawable/linearlayout_border2"
+         android:orientation="vertical" >
+         
+         <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="horizontal"
+             android:layout_weight="1"
+             android:layout_margin="5dp"
+             >
+             <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="时间："
+                 android:textColor="@color/white"
+                 />
+              <TextView 
+                 android:id="@+id/textView_data"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="2015-4-10"
+                 android:layout_marginRight="5dp"
+                 android:textColor="@color/white"
+                 />
+              
+                  <TextView 
+                 android:id="@+id/textView_time"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="19:35:00"
+                 android:textColor="@color/white"
+                 />
+             
+         </LinearLayout>
+         
+         <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="horizontal"
+             android:layout_weight="1"
+             android:layout_margin="5dp"
+             >
+             <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="地点："
+                 android:textColor="@color/white"
+                 />
+              <TextView 
+                 android:id="@+id/textView_address"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="长沙贺龙体育馆"
+                 android:textColor="@color/white"
+                 />
+                                 
+         </LinearLayout>
+         
+           <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="horizontal"
+             android:layout_weight="1"
+             android:layout_margin="5dp"
+             >
+             <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="主办单位："
+                 android:textColor="@color/white"
+                 />
+              <TextView 
+                 android:id="@+id/textView_organizer" 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="湖南省体育局"
+                 android:textColor="@color/white"
+                 />
+            
+             
+         </LinearLayout>
+         
+            <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="horizontal"
+             android:layout_weight="1"
+             android:layout_margin="5dp"
+             >
+             <TextView
+              
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="承办单位："
+                 android:textColor="@color/white"
+                 />
+              <TextView 
+                android:id="@+id/textView_undertake"   
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="湖南省体育局"
+                 android:textColor="@color/white"
+                 />
+                         
+         </LinearLayout>
+         
+             <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="horizontal"
+             android:layout_weight="1"
+             android:layout_margin="5dp"
+             >
+             <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="相关媒体："
+                 android:textColor="@color/white"
+                 />
+              <TextView 
+                 android:id="@+id/textView_media"  
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="潇湘晨报、湖南日报、天择传媒"
+                 android:textColor="@color/white"
+                 />
+          
+         </LinearLayout>
+         
+     </LinearLayout>
+        
+    </RelativeLayout>
+ 
+</LinearLayout>

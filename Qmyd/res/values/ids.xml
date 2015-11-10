@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 公用的 -->
+   <item name="btn_ok" type="id"></item>
+   <item name="btn_cancel" type="id"></item>
+   <!-- 顶部左边返回 -->
+   <item name="btn_top_back" type="id"></item>
+   <item name="imageView" type="id"></item>
+   <!-- 头像 -->
+   <item name="photo" type="id"></item>
+   <!-- 昵称 -->
+   <item name="nickname" type="id"></item>
+   <!-- 名称 -->
+   <item name="name" type="id"></item>
+   <!-- 标题 -->
+   <item name="title" type="id"></item>  
+   <item name="view_foot_parent" type="id"></item>
+   
+   <item name="arrow_back" type="id"></item>
+   <item name="imageView_user" type="id"></item>
+   <item name="textView_user_name" type="id"></item>
+   <item name="textView_user_description" type="id"></item>
+ 
+   
+   
+   <item name="imageView2" type="id"></item>
+   <item name="imageView3" type="id"></item>
+   <item name="imageView4" type="id"></item>
+   <item name="imageView5" type="id"></item>
+   <item name="imageView6" type="id"></item>
+   <item name="imageView7" type="id"></item>
+
+   
+   
+  
+  
+</resources>

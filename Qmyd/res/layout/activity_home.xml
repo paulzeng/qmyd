@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- title start -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:id="@id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView_open_leftmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_home_open_left" />
+        </RelativeLayout>
+        <!-- title end -->
+
+        <com.ak.qmyd.view.MyScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- flash start -->
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_viewpager_height"
+                    android:minHeight="@dimen/home_viewpager_height" >
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/banner_viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent" />
+
+                    <com.ak.qmyd.view.CirclePageIndicator
+                        android:id="@+id/banner_indicator"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:padding="10dip" />
+                </FrameLayout>
+                <!-- flash end -->
+
+                <LinearLayout
+                    android:id="@+id/layouts"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <!-- column start -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <com.ak.qmyd.view.TabPageIndicator
+                            android:id="@+id/indicator"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:src="@drawable/tabindistor_drop_down" 
+                            android:visibility="gone"/>
+                    </LinearLayout>
+                    <!-- column end -->
+
+
+                    <!-- content start -->
+
+                    <FrameLayout
+                        android:id="@+id/content_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/bg_color" >
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/viewpage_indicator"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1080dp" />
+
+                        <include
+                            android:id="@+id/layout_column_editor"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            layout="@layout/view_home_column_editor"
+                            android:visibility="gone" />
+                    </FrameLayout>
+                    <!-- content end -->
+                </LinearLayout>
+            </LinearLayout>
+        </com.ak.qmyd.view.MyScrollView>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

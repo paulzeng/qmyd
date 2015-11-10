@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/city_location_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F0F0F0"
+                    android:padding="10dp"
+                    android:text="定位城市:"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/textView_current_city"
+                        style="@style/button1"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/button1"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        style="@style/button1"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F0F0F0"
+                    android:padding="10dp"
+                    android:text="热门城市:"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btn_shanghai"
+                        style="@style/button1"
+                        android:text="上海市" />
+
+                    <Button
+                        android:id="@+id/btn_guangzhou"
+                        style="@style/button1"
+                        android:text="广州市" />
+
+                    <Button
+                        android:id="@+id/btn_beijing"
+                        style="@style/button1"
+                        android:text="北京市" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btn_shenzhen"
+                        style="@style/button1"
+                        android:text="深圳市" />
+
+                    <Button
+                        android:id="@+id/btn_wuhan"
+                        style="@style/button1"
+                        android:text="武汉市" />
+
+                    <Button
+                        android:id="@+id/btn_hangzhou"
+                        style="@style/button1"
+                        android:text="杭州市" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <Button
+                        android:id="@+id/btn_nanjing"
+                        style="@style/button1"
+                        android:text="南京市" />
+
+                    <Button
+                        android:id="@+id/btn_changsha"
+                        style="@style/button1"
+                        android:text="长沙市" />
+
+                    <Button
+                        android:id="@+id/btn_tianjin"
+                        style="@style/button1"
+                        android:text="天津市" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.ak.qmyd.tools.MyListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/bg_color"
+                android:dividerHeight="1dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.ak.qmyd.bean.SideBar
+        android:id="@+id/sideBar"
+        android:layout_width="38dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center" />
+
+</FrameLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_quancheng"
+            style="@style/button"
+            android:text="全城" />
+
+        <Button
+            android:id="@+id/btn_tianxin"
+            style="@style/button"
+            android:text="天心区" />
+
+        <Button
+            android:id="@+id/btn_kaifu"
+            style="@style/button"
+            android:text="开福区" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_yuhua"
+            style="@style/button"
+            android:text="雨花区" />
+
+        <Button
+            android:id="@+id/btn_furong"
+            style="@style/button"
+            android:text="芙蓉区" />
+
+        <Button
+            android:id="@+id/btn_yuelu"
+            style="@style/button"
+            android:text="岳麓区" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_wangcheng"
+            style="@style/button"
+            android:text="望城区" />
+
+        <Button
+            android:id="@+id/btn_changsha"
+            style="@style/button"
+            android:text="长沙县" />
+
+        <Button
+            android:id="@+id/btn_ningxiang"
+            style="@style/button"
+            android:text="宁乡县" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dbdbdb" />
+
+    <LinearLayout
+        android:id="@+id/linear_city_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/dialog_border"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前城市:"
+            android:textColor="#444444"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textview_show_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/br_next_icon"
+            android:padding="10dp"
+            android:text="长沙"
+            android:textColor="#444444"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

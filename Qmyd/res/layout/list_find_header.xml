@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.ak.qmyd"
+    android:id="@+id/grid_head"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="180dip"
+        android:background="#ffffff" >
+
+        <com.ak.qmyd.view.ViewFlow
+            android:id="@+id/viewflow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.ak.qmyd.view.ViewFlow>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:alpha="0.3"
+            android:background="#000000" >
+
+            <com.ak.qmyd.view.CircleImageView
+                android:id="@+id/iv_user_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/qz_user_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_user_img"
+                android:gravity="center_vertical"
+                android:text="夏天的风"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <com.ak.qmyd.view.CircleFlowIndicator
+                android:id="@+id/viewflowindic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="9dip"
+                android:paddingBottom="6dip"
+                android:paddingLeft="2dip"
+                android:paddingRight="1dip"
+                android:paddingTop="6dip"
+                app:activeColor="#ffff8e09"
+                app:activeType="fill"
+                app:circleSeparation="15dip"
+                app:inactiveColor="#ffffffff"
+                app:inactiveType="stroke"
+                app:radiu="4dip" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F0F0"
+        android:padding="10dp"
+        android:text="推荐用户"
+        android:textColor="@color/common_black_dark"
+        android:textSize="18sp" />
+
+</LinearLayout>

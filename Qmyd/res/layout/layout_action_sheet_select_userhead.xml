@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/action_sheet_root" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/g_line" />
+
+    <Button
+        android:id="@+id/action_sheet_take_photo"
+        style="@style/action_sheet_bt"
+        android:text="拍照" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/g_line" />
+
+    <Button
+        android:id="@+id/action_sheet_pick_photo"
+        style="@style/action_sheet_bt"
+        android:text="从手机选择" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/g_line" />
+
+    <Button
+        android:id="@+id/action_sheet_cancle"
+        style="@style/action_sheet_bt"
+        android:text="取消" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/g_line" />
+
+</LinearLayout>

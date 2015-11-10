@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="选择圈子类型"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/rl_create_circle_type1" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:padding="20dp" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tv_create_circle_type_name1" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:text="篮球" -->
+            <!-- android:textColor="@color/black" -->
+            <!-- android:textSize="20sp" /> -->
+
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/iv_create_circle_type_img1" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:src="@drawable/gou" /> -->
+            <!-- </RelativeLayout> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="1dp" -->
+            <!-- android:background="#999999" /> -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/rl_create_circle_type2" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:padding="20dp" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tv_create_circle_type_name2" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:text="乒乓球" -->
+            <!-- android:textColor="@color/black" -->
+            <!-- android:textSize="20sp" /> -->
+
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/iv_create_circle_type_img2" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:src="@drawable/gou" -->
+            <!-- android:visibility="invisible" /> -->
+            <!-- </RelativeLayout> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="1dp" -->
+            <!-- android:background="#999999" /> -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/rl_create_circle_type3" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:padding="20dp" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tv_create_circle_type_name3" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:text="羽毛球" -->
+            <!-- android:textColor="@color/black" -->
+            <!-- android:textSize="20sp" /> -->
+
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/iv_create_circle_type_img3" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:src="@drawable/gou" -->
+            <!-- android:visibility="invisible" /> -->
+            <!-- </RelativeLayout> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="1dp" -->
+            <!-- android:background="#999999" /> -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/rl_create_circle_type4" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:padding="20dp" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tv_create_circle_type_name4" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:text="游泳" -->
+            <!-- android:textColor="@color/black" -->
+            <!-- android:textSize="20sp" /> -->
+
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/iv_create_circle_type_img4" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:layout_centerVertical="true" -->
+            <!-- android:src="@drawable/gou" -->
+            <!-- android:visibility="invisible" /> -->
+            <!-- </RelativeLayout> -->
+
+            <ListView
+                android:id="@+id/lv_create_circle_type"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" 
+                android:scrollbars="none"
+                android:divider="#dbdbdb"
+                android:cacheColorHint="@android:color/transparent"
+                android:dividerHeight="1dp">
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E7E7E7"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_create_circle_type_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="取消"
+            android:textColor="#FD8D0D"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_create_circle_type_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="确定"
+            android:textColor="#FD8D0D"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

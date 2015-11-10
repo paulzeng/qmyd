@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+        
+             <RelativeLayout
+                 android:id="@+id/rela_venues_book"         
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"           
+                >
+
+                 <ImageView
+                     android:id="@+id/imageView_book_data"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/circle_y" />
+
+                 <TextView
+                     android:id="@+id/textView_day"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignTop="@+id/imageView1"
+                     android:layout_centerHorizontal="true"
+                     android:layout_marginTop="22dp"
+                     android:textColor="#ff8f06"
+                     android:text="礼拜四" />
+
+                 <TextView
+                     android:id="@+id/textView_data"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@+id/textView_day"
+                     android:layout_centerHorizontal="true"
+                     android:textColor="#ff8f06"
+                     android:text="03-05" />
+         </RelativeLayout>
+    
+    
+
+</LinearLayout>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    
+      <!-- 头部title -->
+   
+     <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white"
+        >
+
+        <ImageButton
+            android:id="@id/arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:background="#00ffffff"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="专题活动" />
+
+     
+
+    </RelativeLayout>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/y_line"/>
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ceshi"
+        android:scaleType="centerCrop"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+        <Button 
+            android:id="@+id/btn_activity_prizes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="活动奖品"
+            android:layout_weight="1"
+            android:background="#fff5bc"
+            />
+        
+         <Button 
+            android:id="@+id/btn_activity_rules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="活动规则"
+             android:layout_weight="1"
+             android:background="#ff8f06"
+            />
+        
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"     
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"          
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/linearlayout_border"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="15dp"
+            android:orientation="vertical" >
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+             
+               <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d5d5d5"
+                    android:layout_weight="1"
+                    />
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ceshi31"
+                    />
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动时间"
+                     android:layout_margin="2.5dp"
+                    />
+                
+                  <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ceshi31"
+                    />
+                  
+               <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d5d5d5"
+                    android:layout_weight="1"
+                    />
+                
+            </LinearLayout>
+            
+              <TextView 
+                  android:id="@+id/textView_activity_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015年3月11日-2015年3月20日"
+                     android:layout_margin="2.5dp"
+                    />
+              
+          <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+             
+               <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d5d5d5"
+                    android:layout_weight="1"
+                    />
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ceshi31"
+                    />
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动说明"
+                     android:layout_margin="2.5dp"
+                    />
+                
+                  <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ceshi31"
+                    />
+                  
+               <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d5d5d5"
+                    android:layout_weight="1"
+                    />
+                
+            </LinearLayout> 
+            
+          <TextView 
+                    android:id="@+id/textView_activity_instructions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本次比赛按时地方机安定法安定佛啊安静的记得飞机安定"
+                     android:layout_margin="2.5dp"
+                    />
+          
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+             
+               <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d5d5d5"
+                    android:layout_weight="1"
+                    />
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ceshi31"
+                    />
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="参赛资格"
+                     android:layout_margin="2.5dp"
+                    />
+                
+                  <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ceshi31"
+                    />
+                  
+               <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d5d5d5"
+                    android:layout_weight="1"
+                    />
+                
+            </LinearLayout>    
+            
+                <TextView 
+                    android:id="@+id/textView_participating_qualification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本次比赛按时地方机安防撒扩大佛喀什地方棵偶数看法殴打"
+                     android:layout_margin="2.5dp"
+                    />
+                          
+        </LinearLayout>
+        
+        
+        <ImageView
+            android:id="@+id/imageView_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="92dp"
+            android:src="@drawable/ceshi30" />
+
+    </RelativeLayout>
+    
+    
+   <Button 
+       android:id="@+id/btn_sign_up"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:text="我要报名"
+       android:background="#e40000"
+       android:layout_marginTop="20dp"
+       android:textColor="#ffffff"
+       />
+   </LinearLayout>
+   </ScrollView>
+</LinearLayout>
